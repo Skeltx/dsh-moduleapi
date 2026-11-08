@@ -1,0 +1,31 @@
+{
+  "name": "dsh-moduleapi",
+  "description": "Module API provider (OpenAI-compatible gateway) for DeepSeek Harness — registers the `moduleapi` route through the built-in llm-pi-ai adapter via a bundle patch.",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skeltx/dsh-moduleapi.git"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "moduleapi",
+    "llm"
+  ],
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "client"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
