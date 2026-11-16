@@ -48,18 +48,23 @@ python client\moduleapi.py check
 python client\moduleapi.py ask "Привет" --model deepseek-v4-flash --stream
 ```
 
-## Модели (v0.1)
+## Модели (v0.1.1)
 
-| id | название |
-|---|---|
-| `deepseek-v4-flash` | DeepSeek V4.1 Flash |
-| `deepseek-v4-pro` | DeepSeek V4.1 Pro |
-| `gpt-5.4` | GPT-5.4 |
-| `claude-sonnet-5` | Claude Sonnet 5 |
-| `gemini-3.8-flash` | Gemini 3.8 Flash |
+Все 26 моделей каталога ModuleAPI, включая:
 
-Полный каталог (26 моделей) можно подтянуть через Settings → Models → карточка Module API →
-«Fetch available models».
+| id | название | мышление | фото |
+|---|---|---|---|
+| `deepseek-v4-flash` | DeepSeek V4.1 Flash | off/low/medium/high/max | ✅ |
+| `deepseek-v4-pro` | DeepSeek V4.1 Pro | off/low/medium/high/max | — |
+| `gpt-5.4` … `gpt-6.1-sol` | семейства GPT-5/6 | minimal/low/medium/high | ✅ |
+| `gpt-oss-120b` | GPT-OSS 120B | low/medium/high | — |
+| `claude-sonnet-5` и др. Claude | 7 моделей | off/low/medium/high | ✅ |
+| `gemini-3.7-flash` / `3.8-flash` | Gemini Flash | off/low/high | ✅ |
+| `gemini-3.1-flash-image` | генерация картинок | — | (генерация) |
+| `glm-5.3` | GLM 5.3 | off/high | — |
+| `grok-4.7` | Grok 4.7 | off/low/high | ✅ |
+
+Мышление (`reasoningEfforts`) и ввод картинок (`input`) указаны только там, где они реально есть у модели.
 
 ## Удаление
 
